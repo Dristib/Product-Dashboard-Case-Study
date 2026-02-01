@@ -8,55 +8,53 @@
 <span>
 </div>
 
+# Internal Operations Dashboard – Product Case Study
+
 ## Overview
+This project is a product management case study focused on defining, scoping, and documenting an internal operations dashboard used by teams to manage users, content, and performance metrics efficiently.
 
-This is a starter template using the following stack:
+The goal of this project was to demonstrate structured product thinking using an existing open-source system as a realistic foundation.
 
-- Framework - [Next.js (App Router)](https://nextjs.org)
-- Language - [TypeScript](https://www.typescriptlang.org)
-- Auth - [Auth.js](https://authjs.dev)
-- Database - [Postgres](https://vercel.com/postgres)
-- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
-- Styling - [Tailwind CSS](https://tailwindcss.com)
-- Components - [Shadcn UI](https://ui.shadcn.com/)
-- Analytics - [Vercel Analytics](https://vercel.com/analytics)
-- Formatting - [Prettier](https://prettier.io)
+## Problem Statement
+Internal teams often rely on fragmented tools to track users, performance metrics, and operational workflows. This results in:
+- Poor visibility into key metrics
+- Inefficient decision-making
+- Increased operational overhead
 
-This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, tests, and styles, component-level data fetching, and more.
+## Product Objective
+Design a centralized dashboard that enables operations and admin teams to:
+- Monitor critical metrics in real time
+- Manage users and roles efficiently
+- Improve operational visibility and speed
 
-## Getting Started
+## My Role
+**Product Manager (Self-Initiated Case Study)**
 
-During the deployment, Vercel will prompt you to create a new Postgres database. This will add the necessary environment variables to your project.
+- Defined product vision and success criteria
+- Identified primary user personas (Ops, Admin, Manager)
+- Scoped MVP and prioritized features
+- Designed core user workflows and information hierarchy
+- Evaluated trade-offs between usability, speed, and scalability
+- Used an existing open-source codebase to ground decisions in technical feasibility
 
-Inside the Vercel Postgres dashboard, create a table based on the schema defined in this repository.
+## Key Features (MVP)
+- Role-based access and permissions
+- Admin dashboard with key operational metrics
+- User and content management views
+- Modular layout supporting future integrations
+- Scalable structure for additional analytics and tools
 
-```sql
-CREATE TYPE status AS ENUM ('active', 'inactive', 'archived');
+## Success Metrics (Hypothetical)
+- Reduction in time to access key operational data
+- Improved task completion speed for admin workflows
+- Increased adoption across internal teams
 
-CREATE TABLE products (
-  id SERIAL PRIMARY KEY,
-  image_url TEXT NOT NULL,
-  name TEXT NOT NULL,
-  status status NOT NULL,
-  price NUMERIC(10, 2) NOT NULL,
-  stock INTEGER NOT NULL,
-  available_at TIMESTAMP NOT NULL
-);
-```
-
-Then, uncomment `app/api/seed.ts` and hit `http://localhost:3000/api/seed` to seed the database with products.
-
-Next, copy the `.env.example` file to `.env` and update the values. Follow the instructions in the `.env.example` file to set up your GitHub OAuth application.
-
-```bash
+## Notes
+This project leverages an open-source dashboard template and is adapted as a **product management case study**. The focus is on product definition, prioritization, and decision-making rather than original code authorship.
 npm i -g vercel
 vercel link
 vercel env pull
 ```
-
-Finally, run the following commands to start the development server:
-
-```bash
 pnpm install
 pnpm dev
 ```
