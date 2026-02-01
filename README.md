@@ -51,12 +51,6 @@ Design a centralized dashboard that enables operations and admin teams to:
 
 ## Notes
 This project leverages an open-source dashboard template and is adapted as a **product management case study**. The focus is on product definition, prioritization, and decision-making rather than original code authorship.
-npm i -g vercel
-vercel link
-vercel env pull
-```
-pnpm install
-pnpm dev
 ```
 
 You should now be able to access the application at http://localhost:3000.
